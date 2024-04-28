@@ -53,8 +53,8 @@ fun App() {
     val navController = rememberNavController()
     NavHost(navController, startDestination = "HomePage" ){
         composable("HomePage"){ HomePage(navController)}
-        composable("listening"){ Listening(navController) }
-        composable("Speaking"){ Speaking(navController) }
+        composable("Listening") { Listening(navController) }
+        composable("Speaking") { Speaking(navController) }
         composable("Reading"){ Reading(navController)}
         composable("Writing"){ Writing(navController)}
         composable("MoreInfo"){ MoreInfo(navController) }

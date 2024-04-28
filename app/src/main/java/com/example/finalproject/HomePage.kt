@@ -6,8 +6,10 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -52,6 +54,7 @@ fun HomePage(navController: NavHostController) {
                 modifier = Modifier.align(Alignment.CenterHorizontally)
             )
         }
+        Spacer(modifier = Modifier.height(32.dp))
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceEvenly,
@@ -59,13 +62,48 @@ fun HomePage(navController: NavHostController) {
                 .fillMaxSize()
                 .padding(30.dp)
         ) {
+            Spacer(modifier = Modifier.height(90.dp))
+            Button(
+                onClick = { navController.navigate("Listening") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "Listening", fontSize = 20.sp)
+            }
+            Button(
+                onClick = { navController.navigate("Speaking") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "Speaking", fontSize = 20.sp)
+            }
+            Button(
+                onClick = { navController.navigate("Reading") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "Reading", fontSize = 20.sp)
+            }
+            Button(
+                onClick = { navController.navigate("Writing") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "Writing", fontSize = 20.sp)
+            }
             Spacer(modifier = Modifier.height(16.dp))
-            Listening(navController)
-            Speaking(navController)
-            Reading(navController)
-            Writing(navController)
-            Spacer(modifier = Modifier.height(16.dp))
-            MoreInfo(navController)
+            Button(
+                onClick = { navController.navigate("MoreInfo") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth()
+            ) {
+                Text(text = "More info about Finland...", fontSize = 20.sp)
+            }
         }
     }
 }

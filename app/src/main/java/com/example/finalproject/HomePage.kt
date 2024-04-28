@@ -51,7 +51,7 @@ fun HomePage(navController: NavHostController) {
             )
             Text(
                 text = "FINNISH LEARNER",
-                fontSize = 24.sp,
+                fontSize = 18.sp,
                 color = Color.Black,
                 modifier = Modifier.align(Alignment.CenterHorizontally)
             )
@@ -79,7 +79,7 @@ fun HomePage(navController: NavHostController) {
                         .padding(8.dp)
                         .weight(1f)
                 ) {
-                    Text(text = "Listening", fontSize = 20.sp, color = Color.DarkGray)
+                    Text(text = "Listening", fontSize = 15.sp, color = Color.DarkGray)
                 }
 
                 // Button Speaking
@@ -92,7 +92,7 @@ fun HomePage(navController: NavHostController) {
                         .padding(8.dp)
                         .weight(1f)
                 ) {
-                    Text(text = "Speaking", fontSize = 20.sp, color = Color.DarkGray)
+                    Text(text = "Speaking", fontSize = 15.sp, color = Color.DarkGray)
                 }
             }
 
@@ -110,7 +110,7 @@ fun HomePage(navController: NavHostController) {
                         .padding(8.dp)
                         .weight(1f)
                 ) {
-                    Text(text = "Reading", fontSize = 20.sp, color = Color.DarkGray)
+                    Text(text = "Reading", fontSize = 15.sp, color = Color.DarkGray)
                 }
 
                 // Button Writing
@@ -124,7 +124,7 @@ fun HomePage(navController: NavHostController) {
                         .weight(1f)
 
                 ) {
-                    Text(text = "Writing", fontSize = 20.sp, color = Color.DarkGray)
+                    Text(text = "Writing", fontSize = 15.sp, color = Color.DarkGray)
                 }
             }
 

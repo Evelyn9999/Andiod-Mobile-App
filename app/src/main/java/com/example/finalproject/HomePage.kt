@@ -24,7 +24,7 @@ import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun HomePage(navController: NavHostController) {
-    val image = painterResource(R.drawable.finland_map)
+    val image = painterResource(R.drawable.finlandmap)
 
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
@@ -35,22 +35,36 @@ fun HomePage(navController: NavHostController) {
         )
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(30.dp)
+            ){
+            Text(
+                text = "WELCOME!",
+                fontSize = 30.sp,
+                color = Color.Black,
+                modifier = Modifier.align(Alignment.CenterHorizontally)
+            )
+            Text(
+                text = "FINNISH LEARNER",
+                fontSize = 24.sp,
+                color = Color.Black,
+                modifier = Modifier.align(Alignment.CenterHorizontally)
+            )
+        }
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceEvenly,
             modifier = Modifier
                 .fillMaxSize()
                 .padding(30.dp)
         ) {
-            Text(
-                text = "WELCOME FINNISH LEARNER!",
-                fontSize = 24.sp,
-                color = Color.White,
-                modifier = Modifier.align(Alignment.CenterHorizontally)
-            )
             Spacer(modifier = Modifier.height(16.dp))
             Listening(navController)
             Speaking(navController)
             Reading(navController)
             Writing(navController)
+            Spacer(modifier = Modifier.height(16.dp))
             MoreInfo(navController)
         }
     }

@@ -10,7 +10,7 @@ import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun MoreInfo(navController: NavHostController) {
-    Text("More about Finland...", fontSize = 10.sp)
+    Text("More about Finland...", fontSize = 20.sp)
 }
 
 @Preview

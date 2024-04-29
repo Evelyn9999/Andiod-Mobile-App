@@ -1,5 +1,6 @@
 package com.example.finalproject
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -49,6 +50,7 @@ fun Writing(navController: NavHostController) {
             placeholder = { Text("Type here...") },
             modifier = Modifier
                 .fillMaxWidth()
+                .background(color = Color(0xE9E6EFF7))
                 .weight(1f),
             maxLines = 30,
             keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done),
@@ -57,7 +59,9 @@ fun Writing(navController: NavHostController) {
                 correctedText = " $inputText"
             })
         )
+
         Text("Remaining Words: ${maxWordCount - wordCount}")
+
         Button(
             onClick = {
                 // Simulate AI processing and set corrected text
@@ -70,7 +74,9 @@ fun Writing(navController: NavHostController) {
         ) {
             Text("Submit", color = Color.DarkGray)
         }
+
         Spacer(modifier = Modifier.height(16.dp) )
+
         OutlinedTextField(
             value = correctedText,
             onValueChange = { correctedText = it },
@@ -78,10 +84,13 @@ fun Writing(navController: NavHostController) {
             readOnly = true, // Make this field read-only
             modifier = Modifier
                 .fillMaxWidth()
+                .background(color = Color(0xE9E6EFF7))
                 .weight(1f),
             maxLines = 10
         )
+
         Spacer(modifier = Modifier.height(8.dp) )
+
         Button(
             onClick = {
                 clipboardManager.setText(AnnotatedString(correctedText))

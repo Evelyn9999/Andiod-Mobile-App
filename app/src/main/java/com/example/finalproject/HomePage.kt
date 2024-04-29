@@ -37,6 +37,7 @@ fun HomePage(navController: NavHostController) {
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.matchParentSize()
         )
+
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
@@ -56,7 +57,9 @@ fun HomePage(navController: NavHostController) {
                 modifier = Modifier.align(Alignment.CenterHorizontally)
             )
         }
+
         Spacer(modifier = Modifier.height(32.dp))
+
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.SpaceEvenly,

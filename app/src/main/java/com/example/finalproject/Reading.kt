@@ -65,7 +65,7 @@ fun Reading(navController: NavHostController) {
                     containerColor = Color(0x6666EB76),
                 ),
             ) {
-                Text(text = "👈", fontSize = 15.sp, color = Color.DarkGray)
+                Text(text = "BACK", fontSize = 15.sp, color = Color.DarkGray)
             }
 
             OutlinedButton(

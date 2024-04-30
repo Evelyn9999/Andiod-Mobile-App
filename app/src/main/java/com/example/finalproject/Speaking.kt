@@ -37,23 +37,24 @@ fun <MediaPlayer> Speaking(navController: NavHostController) {
             modifier = Modifier
                 .matchParentSize()
                 .pointerInput(Unit) {
-                    detectTapGestures { offset ->
-                        // Update the iconPosition with the offset where the user tapped
-                        iconPosition = offset
-                    }
-                }.clickable {
-                    // Navigate to the building details page when a building is clicked
-                    navController.navigate("ReadingDetail")
+                    detectTapGestures(
+                        onTap = { offset ->
+                            // Update the iconPosition with the offset where the user tapped
+                            iconPosition = offset
+                            // Navigate to the building details page when a building is clicked
+                            navController.navigate("ReadingDetail")
+                        }
+                    )
                 }
         )
 
         if (iconPosition != Offset.Unspecified) {
             Canvas(modifier = Modifier.fillMaxSize()) {
                 val path = Path().apply {
-                    moveTo(iconPosition.x, iconPosition.y - 60) // Top of the pin
-                    lineTo(iconPosition.x - 30, iconPosition.y) // Left bottom corner of the pin head
-                    lineTo(iconPosition.x, iconPosition.y + 60) // Bottom of the pin body
-                    lineTo(iconPosition.x + 30, iconPosition.y) // Right bottom corner of the pin head
+                    moveTo(iconPosition.x, iconPosition.y - 30) // Top of the pin
+                    lineTo(iconPosition.x - 15, iconPosition.y) // Left bottom corner of the pin head
+                    lineTo(iconPosition.x, iconPosition.y + 30) // Bottom of the pin body
+                    lineTo(iconPosition.x + 15, iconPosition.y) // Right bottom corner of the pin head
                     close()
                 }
                 drawPath(path, color = Color.Black)

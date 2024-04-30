@@ -55,6 +55,7 @@ fun App() {
         composable("HomePage"){ HomePage(navController)}
         composable("Listening") { Listening(navController) }
         composable("Speaking") { Speaking<Any>(navController) }
+        composable("ReadingDetail") { ReadingDetail(navController) }
         composable("Reading"){ Reading(navController)}
         composable("Writing"){ Writing(navController)}
         composable("MoreInfo"){ MoreInfo(navController) }

@@ -2,6 +2,8 @@ package com.example.finalproject
 
 import androidx.compose.runtime.*
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,6 +36,7 @@ fun MoreInfo(navController: NavHostController) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp)
+            .verticalScroll(rememberScrollState())
     ){
         Button(
             onClick = { navController.navigate("HomePage") },
@@ -53,7 +56,7 @@ fun MoreInfo(navController: NavHostController) {
                 .wrapContentWidth(Alignment.CenterHorizontally))
 
         Spacer(modifier = Modifier.height(16.dp))
-        Text(apiData, fontSize = 18.sp)  // Displaying the API data
+        Text(apiData, fontSize = 12.sp)  // Displaying the API data
 
     }
 }

@@ -34,6 +34,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 
 
 data class NewsItem(val title: String, val imageUrl: Int, val summary: String)
@@ -76,7 +77,7 @@ fun Reading(navController: NavHostController) {
                 containerColor = Color(0x6666EB76),
             ),
         ) {
-            Text(text = "BACK", fontSize = 15.sp, color = Color.DarkGray)
+            Text(stringResource(R.string.BACK), fontSize = 15.sp, color = Color.DarkGray)
         }
 
         LazyColumn(modifier = Modifier.weight(1f)) {
@@ -94,7 +95,7 @@ fun Reading(navController: NavHostController) {
                 .align(Alignment.CenterHorizontally)
                 .padding(8.dp)
         ) {
-            Text("Click and Visit YLE News")
+            Text(stringResource(R.string.Visit_YLE_News))
         }
     }
 }

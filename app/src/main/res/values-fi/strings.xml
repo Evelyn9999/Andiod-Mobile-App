@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Viimeinen projekti</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="WELCOME">TERVETULOA</string>
+    <string name="Speaking">Puhuminen</string>
+    <string name="Reading">Lukeminen</string>
+    <string name="Writing">Kirjoittaminen</string>
+    <string name="Listening">Kuunteleminen</string>
+    <string name="FINNISH_LEARNER">SUOMEN OPPIJA</string>
+    <string name="More_info_about_Finland">Lisätietoa Suomesta</string>
+    <string name="BACK">TAKAISIN</string>
+    <string name="List">Lista</string>
+    <string name="Upload_audio">Lataa oma ääni...</string>
+    <string name="Visit_YLE_News">Klikkaa ja vieraile YLE Uutisissa</string>
+    <string name="Submit">Lähetä</string>
+    <string name="Copy">Kopio</string>
+    <string name="Remaining_Words">Jäljellä olevat sanat</string>
+</resources>

@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Final Project</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="WELCOME">WELCOME</string>
+    <string name="FINNISH_LEARNER">FINNISH LEARNER</string>
+    <string name="Listening">Listening</string>
+    <string name="Speaking">Speaking</string>
+    <string name="Reading">Reading</string>
+    <string name="Writing">Writing</string>
+    <string name="More_info_about_Finland">More Info about Finland</string>
+    <string name="BACK">BACK</string>
+    <string name="List">List</string>
+    <string name="Upload_audio">Upload your own audio...</string>
+    <string name="Visit_YLE_News">Click and Visit YLE News</string>
+    <string name="Submit">Submit</string>
+    <string name="Copy">Copy</string>
+    <string name="Remaining_Words">Remaining Words</string>
 </resources>

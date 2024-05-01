@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.material3.Button
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 
 @Composable
@@ -40,7 +41,7 @@ fun Writing(navController: NavHostController) {
                 containerColor = Color(0x6F2197F7),
             ),
         ) {
-            Text(text = "BACK", fontSize = 15.sp, color = Color.DarkGray)
+            Text(stringResource(R.string.BACK), fontSize = 15.sp, color = Color.DarkGray)
         }
 
         OutlinedTextField(
@@ -72,7 +73,7 @@ fun Writing(navController: NavHostController) {
             ),
             modifier = Modifier.align(Alignment.End),
         ) {
-            Text("Submit", color = Color.DarkGray)
+            Text(stringResource(R.string.Submit), color = Color.DarkGray)
         }
 
         Spacer(modifier = Modifier.height(16.dp) )
@@ -100,7 +101,7 @@ fun Writing(navController: NavHostController) {
             ),
             modifier = Modifier.align(Alignment.End),
         ) {
-            Text("Copy", color = Color.DarkGray)
+            Text(stringResource(R.string.Copy), color = Color.DarkGray)
         }
     }
 

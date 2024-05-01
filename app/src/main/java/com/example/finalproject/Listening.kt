@@ -18,8 +18,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Icon
-
-
+import androidx.compose.ui.res.stringResource
 
 
 @Composable
@@ -40,7 +39,7 @@ fun Listening(navController: NavHostController) {
                 containerColor = Color(0x66E9819B),
             ),
         ) {
-            Text(text = "BACK", fontSize = 15.sp, color = Color.DarkGray)
+            Text(stringResource(R.string.BACK), fontSize = 15.sp, color = Color.DarkGray)
         }
 
         Spacer(modifier = Modifier.height(8.dp) )
@@ -101,7 +100,7 @@ fun Listening(navController: NavHostController) {
                     containerColor = Color(0x66E9819B),
                 ),
                 ) {
-                Text("List", fontSize = 15.sp, color = Color.DarkGray)
+                Text(stringResource(R.string.List), fontSize = 15.sp, color = Color.DarkGray)
             }
         }
 
@@ -114,7 +113,7 @@ fun Listening(navController: NavHostController) {
                 .align(Alignment.CenterHorizontally)
                 .padding(8.dp)
             ) {
-            Text("Upload your own audio...")
+            Text(stringResource(R.string.Upload_audio))
         }
 
 

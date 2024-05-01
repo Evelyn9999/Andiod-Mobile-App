@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -67,7 +68,7 @@ fun <MediaPlayer> Speaking(navController: NavHostController) {
                 containerColor = Color(0x8FFFEB3B),
             ),
         ) {
-            Text(text = "BACK", fontSize = 15.sp, color = Color.DarkGray)
+            Text(stringResource(R.string.BACK), fontSize = 15.sp, color = Color.DarkGray)
         }
 
     }

@@ -23,7 +23,7 @@ import java.util.*
 
 @Composable
 fun HomePage(navController: NavHostController) {
-    var selectedLanguage by remember { mutableStateOf("English") }
+    var selectedLanguage by remember { mutableStateOf(Locale.getDefault().language )}
     val context = LocalContext.current
     val configuration = LocalConfiguration.current
 
@@ -42,12 +42,13 @@ fun HomePage(navController: NavHostController) {
         Box(modifier = Modifier.padding(16.dp)) {
 
             TextButton(onClick = {
-                // Toggle between English and Finnish
-                selectedLanguage = if (selectedLanguage == "en") "fi" else "en"
-                val locale = Locale(selectedLanguage)
-                context.resources.configuration.setLocale(locale)
-                context.resources.updateConfiguration(context.resources.configuration, context.resources.displayMetrics)
-            }, modifier = Modifier.padding(16.dp).align(Alignment.TopStart)) {
+                val newLang = if (selectedLanguage == "en") "fi" else "en"
+                selectedLanguage = newLang
+                val locale = Locale(newLang)
+                Locale.setDefault(locale)
+                configuration.setLocale(locale)
+                context.resources.updateConfiguration(configuration, context.resources.displayMetrics)
+            }) {
                 Text(text = if (selectedLanguage == "en") "English" else "Suomi")
             }
 

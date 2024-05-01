@@ -48,7 +48,7 @@ fun MoreInfo(navController: NavHostController) {
         }
 
         Spacer(modifier = Modifier.height(16.dp))
-        MapView()
+        MapView(modifier = Modifier.fillMaxSize().height(120.dp))
 
         Spacer(modifier = Modifier.height(16.dp))
         Text("Statistics Finland's online service",

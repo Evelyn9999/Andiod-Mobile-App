@@ -74,4 +74,7 @@ dependencies {
     implementation( "androidx.compose.material:material-icons-extended:<version>")
     implementation ("io.ktor:ktor-client-android:1.6.7")
     implementation ("io.ktor:ktor-client-serialization:1.6.7")
+
+    implementation ("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.maps.android:maps-compose:2.5.0")
 }

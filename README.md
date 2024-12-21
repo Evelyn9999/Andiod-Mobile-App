@@ -13,8 +13,8 @@ May 2024
 ## Overview
 
 A Finnish-learning Andiod App designed by Evelyn. 
-Main functions include listening, speaking, reading and writing. 
-Haven't finished yet but most functions display at least.
+
+Implemented core functionalities, including tile movement and collision calculations, ensuring accurate behavior and interactions within the application.
 
 
 

@@ -6,6 +6,7 @@
 
 Evelyn Liang
 
+
 ## Update Date
 
 May 2024
@@ -14,10 +15,6 @@ May 2024
 ## Overview
 
 A Finnish-learning Andiod App designed by Evelyn. 
-
-## Main Contributions
-
-Implemented core functionalities, including tile movement and collision calculations, ensuring accurate behavior and interactions within the application.
-
+Five main functions include listening, speaking, reading, writing and learn more about Finland.
 
 
